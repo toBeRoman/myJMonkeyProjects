@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  *Reads a csv and save it in a multidimensional array
@@ -27,8 +26,7 @@ public class CSVConnect {
      csvArray = new ArrayList<String[]>();
     }        
     
-    public void run(){
-    
+    public void run(){    
 	BufferedReader br = null;
 	String line = "";
 	String cvsSplitBy = ",";        
@@ -52,8 +50,6 @@ public class CSVConnect {
 				e.printStackTrace();
 			}
 		}
-	}       
-        
-	System.out.println("Done... csv array size="+csvArray.size());
+	}    	
   }
 }
